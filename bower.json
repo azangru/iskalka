@@ -1,0 +1,23 @@
+{
+  "name": "Iskalka",
+  "version": "0.0.1",
+  "homepage": "https://github.com/azangru/iskalka",
+  "authors": [
+    "Andrey Azov <andrey.azov@gmail.com>"
+  ],
+  "description": "A searchable database for bilingual texts",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.2.1"
+  }
+}
