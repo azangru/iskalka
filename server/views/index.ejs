@@ -1,0 +1,28 @@
+<script src='/models/BookModel.js'></script>
+<script src='/collections/Books.js'></script>
+<script src='/models/AppModel.js'></script>
+<script src='/views/SearchView.js'></script>
+<script src='/views/BookView.js'></script>
+<script src='/views/BooksView.js'></script>
+<script src='/views/AppView.js'></script>
+
+I am the index page
+
+<div id="dials">
+  <div id="search-field"></div>
+  <div id="book-list"></div>
+</div>
+
+<div id="results"></div>
+
+<script>
+  var importedBooks = JSON.parse('<%-JSON.stringify(books)%>');;
+  // var books = new Books();
+  // books.reset(<%= books %>);
+  // books.reset(importedBooks);
+  var app = new AppModel(importedBooks);
+  var appView = new AppView({model: app});
+  $('body').append(appView.render());
+
+  //window.books = books;
+</script>

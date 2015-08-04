@@ -21,17 +21,19 @@ exports.create = function(data){
 
 
 exports.search = function(query){
-  client.search({
-    q: query
-  }).then(function (body) {
-    var hits = body.hits.hits; // an array of objects
-    var ids = hits.map(function(record){
-      return record._id;
-    });
-    console.log("response", JSON.stringify(body));
-    console.log("id’s", ids);
-  }, function (error) {
-    console.trace(error.message);
+  return client.search({
+    // q: query,
+    index: 'iskalka',
+    size: 10000,
+    body: {
+      query: {
+        multi_match: {
+          query: query,
+          fields: ["left", "right"],
+          operator: "and"
+        }
+      }
+    }
   });
 };
 

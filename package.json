@@ -21,6 +21,9 @@
     "body-parser": "~1.13.3",
     "debug": "~2.2.0",
     "elasticsearch": "~5.0.0",
-    "request": "~2.60.0"
+    "request": "~2.60.0",
+    "ejs": "~2.3.3",
+    "express-partials": "~0.3.0",
+    "underscore": "~1.8.3"
   }
 }
