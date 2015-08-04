@@ -9,3 +9,7 @@ server/db/dbConfig.js
 # texts (not mine to publish)
 server/db/initial_texts
 
+# connection with psql to index it in elasticsearch
+server/db/elasticsearch-jdbc-1.7.0.1
+server/db/elasticsearch-jdbc-script.sh
+server/db/logs
