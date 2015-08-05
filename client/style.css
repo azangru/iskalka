@@ -1,0 +1,30 @@
+div.book-list{
+  margin-top: 20px;
+  width: 20%;
+  border: 1px solid black;
+}
+
+div.book-hits{
+  display: inline-block;
+  width: 10%;
+}
+
+div.book-name{
+  display: inline-block;
+}
+
+div#paragraph{
+  margin-top: 20px;
+  display: inline-block;
+}
+
+div.paragraph-left{
+  display: inline-block;
+  width: 45%;
+  margin-right: 5%;
+}
+
+div.paragraph-right{
+  display: inline-block;
+  width: 45%;
+}

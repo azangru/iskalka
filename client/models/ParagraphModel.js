@@ -5,9 +5,8 @@ var ParagraphModel = Backbone.Model.extend({
     this.set("leftText", "");
     this.set("rightText", "");
 
-    this.on('change', function(){
-      console.log("wow!");
-    });
+    // this.on('change', function(){
+    // });
   }
 
 });

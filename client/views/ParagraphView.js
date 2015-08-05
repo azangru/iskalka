@@ -2,7 +2,7 @@ var ParagraphView = Backbone.View.extend({
 
   tagName: 'div',
   id: 'paragraph',
-  template: _.template('<div class="book-left"><%= leftText %></div><div class="paragraph-right"><%= rightText %></div>'),
+  template: _.template('<div class="paragraph-left"><%= leftText %></div><div class="paragraph-right"><%= rightText %></div>'),
   
   initialize: function(){
     var self = this;
