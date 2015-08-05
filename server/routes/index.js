@@ -11,7 +11,7 @@ router.get('/', function(req, res) {
   Book.findAll()
     .then(function(books){
       var result = books.map(function(book){
-        return {id: book.get('id'), name: book.get('name')};
+        return {bookId: book.get('id'), name: book.get('name')};
       });
       console.log("books:", result);
       res.render('index', {books: result});

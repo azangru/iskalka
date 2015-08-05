@@ -12,9 +12,14 @@ var SearchView = Backbone.View.extend({
   },
 
   submit: function(e){
+    var self = this;
     e.preventDefault();
     var query = $(e.currentTarget).parent().find("#query").val();
-    $.get( "/find", { query: query } );
+    $.get( "/find", { query: query } )
+      .done(function(data) {
+        self.model.announceResponse(data);
+        // self.trigger('first paragraph', firstParagraph);
+      });
   },
 
   render: function(){
